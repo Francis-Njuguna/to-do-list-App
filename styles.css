@@ -34,22 +34,34 @@ body {
     margin-bottom: 20px;
 }
 
-.todo-input {
+.todo-input, .reminder-time, .reminder-minutes {
     width: 70%;
     padding: 10px;
     border: 2px solid #ce93d8;
     border-radius: 5px;
     outline: none;
+    margin-bottom: 10px;
+}
+
+.reminder-minutes {
+    width: 30%;
+}
+
+.todo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
 }
 
 .add-btn {
+    width: 70%;
     padding: 10px 15px;
     background-color: #ba68c8;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-left: 10px;
 }
 
 .add-btn:hover {
@@ -83,4 +95,23 @@ body {
 
 .todo-list li button:hover {
     background: #d32f2f;
+}
+
+.notification-btn {
+    width: 70%;
+    padding: 10px 15px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.notification-btn:hover {
+    background-color: #388e3c;
+}
+
+.notification-btn.hidden {
+    display: none;
 }

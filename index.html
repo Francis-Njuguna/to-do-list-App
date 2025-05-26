@@ -10,7 +10,10 @@
   <section class="todo-app">
     <h1 class="app-title">🌸 To Do List App 🌸</h1>
     <div class="todo-container">
+      <button id="notification-permission" class="notification-btn">🔔 Enable Notifications</button>
       <input type="text" class="todo-input" placeholder="Add a new task...">
+      <input type="datetime-local" class="reminder-time" placeholder="Set reminder time">
+      <input type="number" class="reminder-minutes" placeholder="Minutes before" min="1" value="5">
       <button class="add-btn">➕ Add</button>
       <ul class="todo-list">
         <!-- Tasks will appear here -->
